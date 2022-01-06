@@ -21,7 +21,7 @@ def generate_combos(wheels):
         def next_wheel_overloaded():
             if wheels_left():
                  return (current_positions[current_wheel + 1 ] + 1) \
-                                == len(wheels[current_wheel])
+                                == len(wheels[current_wheel + 1])
             else: 
                 return True
         while(wheels_left() and next_wheel_overloaded()) :
