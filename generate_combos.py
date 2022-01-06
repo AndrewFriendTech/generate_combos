@@ -7,7 +7,9 @@ def generate_combos(wheels):
       #an array with the values reference by each position in the current_possitions array
       combo = []
       for i in range(len(current_positions)):
-        combo.append(wheels[i][current_positions[i]])
+        wheel = wheels[i]
+        symbol = wheel[current_positions[i]]
+        combo.append(symbol)
       combos.append(combo)
   
   add_combo()
